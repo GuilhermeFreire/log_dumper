@@ -19,7 +19,7 @@ def read_raw(page):
 	return html
 
 def read(page):
-	return json.loads(read_raw(page))
+	return json.loads(read_raw(page).decode())
 
 if __name__ == "__main__":
 	print("==> POST:", write(":", "ohohohohoho ahahahahaha ohohohohoho ahahahaha trolololololololololololololololooool"))
